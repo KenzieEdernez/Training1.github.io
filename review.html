@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="review.css">
+</head>
+<body>
+    <header class="navbar">
+      <div class="logo"><a href="dashboard_main.html"><img src="gambar/logo_text.png" alt="text Logo"></a></div>
+      <div class="nav-buttons">
+            <button class="nav-btn"><a href="search.html">search</a></button>
+            <button class="nav-btn"><a href="notif.html">notif</button></a>
+            <button class="nav-btn"><a href="profile.html">profile</button></a>
+        </div>
+    </header>
+
+    <!-- Konten Utama -->
+  <div class="container mt-4">
+    <!-- Nama Cafe -->
+    <div class="mb-3">
+      <div class="info-box">nama cafe</div>
+    </div>
+    <!-- Tipe Cuisine -->
+    <div class="mb-3">
+      <div class="info-box">tipe cuisine</div>
+    </div>
+    <!-- Rating dan brp yg review -->
+    <div class="mb-3">
+      <div class="info-box rate-box">Rating dan brp yg review</div>
+    </div>
+    <!-- Baris Bintang 5 - 1 -->
+    <div class="mb-3">
+        <div class="rating">
+            <div class="rating-box">bintang 5</div>
+            <div class="rating-box">bintang 4</div>
+            <div class="rating-box">bintang 3</div>
+            <div class="rating-box">bintang 2</div>
+            <div class="rating-box">bintang 1</div>
+        </div>
+    </div>
+    <!-- Share Thoughts & See All -->
+    <div class="d-flex justify-content-between mb-3">
+      <div class="info-box share-thoughts">Share your thoughts</div>
+      <div class="info-box see-all">see all</div>
+    </div>
+    
+    <!-- textbox -->
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="textbox" rows="3"></textarea>
+          </div>
+    </form>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+
+  <!-- Tombol Back to Dashboard -->
+  <div class="back-container text-center">
+    <button class="btn back-btn" onclick="goToDetails('123')">Back to Dashboard</button>
+  </div>
+
+  <script>
+    function goToDetails(kafeId) {
+window.location.href = `cafedetails.html?id=${kafeId}`;
+}
+</script>
+
+</body>
+</html>
